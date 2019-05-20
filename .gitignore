@@ -1,0 +1,13 @@
+    
+# ignore
+
+.metadata
+.settings
+bin
+.classpath
+.project
+
+# Maven
+log/
+target/
+/build/

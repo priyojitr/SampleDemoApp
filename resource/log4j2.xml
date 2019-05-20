@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE Configuration>
+<Configuration name="sample-demo">
+	<Properties>
+		<Property name="log-pattern">%d %p %c{1.}: %m%n</Property>
+	</Properties>
+	<Appenders>
+		<Console name="console-log" target="SYSTEM_OUTPUT">
+			<PatternLayout>
+				<Pattern>${log-pattern}</Pattern>
+			</PatternLayout>
+		</Console>
+	</Appenders>
+	<Loggers>
+		<Root level="debug">
+			<AppenderRef ref="console-log" />
+		</Root>
+	</Loggers>
+</Configuration>
